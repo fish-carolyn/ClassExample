@@ -2,7 +2,7 @@
 title: "Basic Plots"
 author: "Jeff Goldsmith"
 date: 2019-09-10
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include = FALSE}
@@ -24,8 +24,10 @@ plot_df = tibble(
 
 First we show a histogram of the `x` variable.
 
+This is actual new stuff. 
+
 ```{r x_hist}
-ggplot(plot_df, aes(x = x)) + geom_histogram()
+ggplot(plot_df, aes(x = x)) + geom_histogram(fill="lightpink")
 ```
 
 Next we show a scatterplot of `y` vs `x`. 
